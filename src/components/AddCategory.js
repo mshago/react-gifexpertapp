@@ -8,18 +8,20 @@ const AddCategory = ({ setCategory }) => {
     e.preventDefault();
 
     if (value.trim().length > 2) {
-      setCategory((cats) => [value, ...cats]);
+      setCategory(value);
       setValue("");
     }
   };
 
   const handleChange = (e) => {
+    console.log('changing', e.target.value)
+    console.log('changing value', value)
     setValue(e.target.value);
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <p>{value}</p>
+      {/* <p>{value}</p> */}
       <input type="text" value={value} onChange={handleChange} />
     </form>
   );

@@ -3,6 +3,9 @@ import { getGifs } from "../helpers/getGifs"
 
 export const useFetchGifs = ( category ) => {
     
+
+    console.log('aaaaa',category)
+
     const [state, setState] = useState({
         data:[],
         loading: true,
