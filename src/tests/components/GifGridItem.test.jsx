@@ -30,7 +30,6 @@ describe('Tests on <GifGridItem />',() => {
 
     test('must have animate__fadeIn class',() => {
         const div = wrapper.find('div')
-        //console.log(div.hasClass('animate__fadeIn'));
         expect(div.hasClass('animate__fadeIn'));
     })
 });
